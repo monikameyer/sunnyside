@@ -1,0 +1,30 @@
+.title{
+    font-size: 14px;
+}
+
+
+@media (max-width: 768px){
+    .title{
+        color: red;
+        font-size: 68px;
+    }
+
+    .desc {color: blueviolet;}
+}
+
+@media (max-width: 576px){
+    .title{
+        color: gold;
+        font-size: 30px;
+    }
+
+    .desc{
+        color: blue;
+    }
+}
+
+@media print{
+    .title{
+        color: brown;
+    }
+}

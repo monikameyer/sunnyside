@@ -1,0 +1,88 @@
+.square {
+    background-color: aqua;
+    width:200px;
+    height: 200px;
+    transition: 0.5s;
+}
+.square:hover {
+    background-color: red;
+    border: 3px solid black;
+}
+.circle {
+    width: 250px;
+    height: 250px;
+    background-color: gold;
+    border-radius: 50%;
+    position: relative;
+}
+/*---
+.circle::before{
+    content: "";
+    background-color: white;
+    width: 70%;
+    height: 70%;
+    position: absolute;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.circle::after{
+    content: "";
+    background-color: gold;
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);   
+}
+
+.circle:hover {
+    background-color: purple;
+    width: 300px;
+}
+
+/*** pseudoklasy ---*/
+
+.input.focus{
+    background-color: gold;
+}
+.a.active {
+    color: red;
+}
+.a.link{
+    color: green;
+}
+.title{
+    position: relative;
+    width: 100px;
+    text-align: center;
+    z-index: 15;
+    cursor: pointer;
+}
+.title:hover::before{
+    content: "";
+    position: absolute;
+    background-color: red;
+    height: 4px;
+    width: 100%;
+    border-radius: 50px;
+    bottom: 0;
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 0.4s;
+}
+
+.desc::first-letter{
+    color: red;
+    font-size: 24px;
+    background-color: gold;
+}
+
+.desc::first-line {
+    font-size: 36;
+    color: blue;
+}
